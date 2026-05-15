@@ -1,0 +1,16 @@
+body{
+    background-image: url('../images/camel.gif');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+p{
+    font-size: 12pt;
+    color: #aa5588;
+    text-align: justify;
+    font-family: arial, sans-serif;
+}
+strong{
+    color: #0000FF;
+    font-family: verdana;
+}
