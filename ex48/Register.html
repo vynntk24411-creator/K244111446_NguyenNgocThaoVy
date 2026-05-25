@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Graphic User Interface</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(137, 188, 255);
+            }
+            form {
+                width: 100%;
+                max-width: 600px;
+                padding: 20px;
+            }
+            .row {
+                margin: 8px 0;
+            }
+            label {
+                display: inline-block;
+                width: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align:center">
+            <img src="images/Jackson.gif" alt="Jackson">
+            <h1 style="text-align:center">Registration Form</h1>
+            <p style="text-align:center">Register your Jackson Electronics product here</p>
+        </div>
+        <form>
+            <div class="row">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="firstName" id="first_name">
+                <label for="last_name" style="width:80px">Last Name:</label>
+                <input type="text" name="lastName" id="last_name">
+            </div>
+            <div class="row">
+                <label for="address1">Address #1:</label>
+                <input type="text" name="address1" id="address1">
+            </div>
+            <div class="row">
+                <label for="address2">Address #2:</label>
+                <input type="text" name="address2" id="address2">
+            </div>
+            <div class="row">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city">
+                <label style="width:40px" for="state">State:</label>
+                <input type="text" name="state" id="state" size="5">
+                <label style="width:40px" for="zip">Zip:</label>
+                <input type="text" name="zip" id="zip" size="6">
+            </div>
+            <div class="row">
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country">
+            </div>
+            <hr color="black">
+            <div class="row">
+                <label for="product">Product:</label>
+                <input type="text" name="product" id="product">
+            </div>
+            <div class="row">
+                <label for="datePurchased">Date Purchased:</label>
+                <input type="date" name="datePurchased" id="datePurchased">
+            </div>
+            <div class="row">
+                <label for="serialNumber">Serial #:</label>
+                <input type="text" name="serialNumber" id="serialNumber">
+            </div>
+            <div>
+                <label for="usedFor">Used for:</label>
+                <input type="radio" name="usedFor" value="a" id="home">
+                <label for="home">Home</label>
+                <input type="radio" name="usedFor" value="b" id="educational">
+                <label for="educational">Educational Institution</label><br>
+                <label></label>
+                <input type="radio" name="usedFor" value="c" id="business">
+                <label for="business">Business</label>
+                <input type="radio" name="usedFor" value="d" id="other">
+                <label for="other">Other</label><br>
+                <label></label>
+                <input type="radio" name="usedFor" value="e" id="government">
+                <label for="government">Government</label>
+            </div>
+            <div>
+                <label for="system">System (check all that apply):</label>
+                <input type="checkbox" name="system" value="a" id="windows">
+                <label for="windows">Windows</label>
+                <input type="checkbox" name="system" value="b" id="unix">
+                <label for="unix">UNIX</label><br>
+                <label></label>
+                <input type="checkbox" name="system" value="c" id="macintosh">
+                <label for="macintosh">Macintosh</label>
+                <input type="checkbox" name="system" value="d" id="other-system">
+                <label for="other-system">Other</label>
+            </div>
+            <hr color="black">
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+            </div>
+            <div style="text-align:center; margin-top:20px">
+                <button type="register">Click to register</button>
+                <button type="cancel">Click to cancel</button>
+            </div>
+        </form>
+    </body>
+</html>
