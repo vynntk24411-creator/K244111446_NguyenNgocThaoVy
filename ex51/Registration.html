@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration</title>
+        <style>
+            .form-group{
+                margin-bottom:15px;
+            }
+            label{
+                color:rgb(255, 255, 255)
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 550px; height: 600px; border: 1px solid black; background-color: #177e7e; margin: auto; padding: 20px;">
+            <div style="text-align: center;">
+                <img src="Logo.gif" alt="Registration" style="width:70%">
+                <h1 style="color:rgb(255, 255, 255)">Newborn Registration</h1>
+            </div>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="date">Date: </label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="first_name">1) Infant's first name: </label>
+                    <input type="text" name="firstName" id="first_name">
+                    <label for="last_name">Last: </label>
+                    <input type="text" name="lastName" id="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="medical_record">2) Medical Record #: </label>
+                    <input type="text" name="medicalRecord" id="medical_record">
+                </div>
+                <div class="form-group">
+                    <label for="datebirth">3) Date of birth: </label>
+                    <input type="date" name="datebirth" id="datebirth">
+                </div>
+                <div class="form-group">
+                    <label for="birth_weight">4) Birth weight: </label>
+                    <input type="number" name="birthWeight" id="birth_weight" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="apgar_score">5) APGAR score: </label>
+                    <input type="number" name="apgarScore" id="apgar_score">
+                </div>
+                <div class="form-group">
+                    <label for="mother_first_name">6) Mother's first name: </label>
+                    <input type="text" name="motherFirstName" id="mother_first_name">
+                    <label for="mother_last_name">Last: </label>
+                    <input type="text" name="motherLastName" id="mother_last_name">
+                </div>
+                <div class="form-group">
+                    <label for="father_first_name">7) Father's first name: </label>
+                    <input type="text" name="fatherFirstName" id="father_first_name">
+                    <label for="father_last_name">Last: </label>
+                    <input type="text" name="fatherLastName" id="father_last_name">
+                </div>
+                <div class="form-group">
+                    <label>8) Physician (check all that apply):</label>
+                    <select name="physician" multiple size="4" style="vertical-align: top; margin-left: 8px;">
+                        <option value="warren_albert">Dr. Warren Albert</option>
+                        <option value="maria_alvarez">Dr. Maria Alvarez</option>
+                        <option value="karen_brinkman">Dr. Karen Brinkman</option>
+                        <option value="micheal_kerry">Dr. Micheal Kerry</option>
+                    </select>
+                </div>
+                <div class="form-group" style="text-align:center">
+                    <input type="button" value="Register" onclick="saveRegistration()">
+                    <input type="button" value="Cancel" onclick="resetRegistration()">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
