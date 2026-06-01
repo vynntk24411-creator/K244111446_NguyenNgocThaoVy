@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Demo_2</title>
+        <script src="js/mainjs.js"></script>
+        <script type="text/javascript">
+            function KiemTra(a)
+            {
+                anumber=eval(a);
+                ketqua=isEven(anumber);
+                if(ketqua==true)
+                {
+                    alert(a + " là số chẵn");
+                }
+                else
+                {
+                    alert(a + " là số lẻ");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Kiếm tra số chẵn hay lẻ</h1>
+        <p>Nhập số:</p>
+        <input type="number" id="number">
+        <p></p>
+        <input type="button" value="Kiểm tra chẵn lẻ" onclick="KiemTra(number.value)">
+    </body>
+</html>

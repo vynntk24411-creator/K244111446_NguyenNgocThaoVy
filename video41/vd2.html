@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ví dụ 2</title>
+        <script src="js/xuly.js"></script>
+            <script type="text/javascript">
+                function XuLyCong()
+                {
+                    var txtA=document.getElementById("ida")
+                    var txtB=document.getElementById("idb")
+                    var kq=Cong(txtA.value, txtB.value)
+                    document.getElementById("idkq").innerHTML=kq
+                }
+            </script>
+    </head>
+    <body>
+        Nhập a:<input type="number" id="ida" /><br/>
+        Nhập b:<input type="number" id="idb" /><br/>
+        <input type="button" value="Tính +"
+            onclick="XuLyCong()" /><br/>
+        Kết quả: <label id="idkq"></label>  
+    </body>
+</html>

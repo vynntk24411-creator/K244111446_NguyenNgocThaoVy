@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Demo_1</title>
+        <script type="text/javascript">
+            function XuLyCong(hsa, hsb)
+            {
+                ketqua=eval(hsa) + eval(hsb);
+                alert(ketqua);
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Hệ số a:</td>
+                <td>
+                    <input type="text" id="hsa">
+                </td>
+            </tr>
+            <tr>
+                <td>Hệ số b:</td>
+                <td>
+                    <input type="text" id="hsb">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Cộng 2 số" onclick="XuLyCong(hsa.value,hsb.value)">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
