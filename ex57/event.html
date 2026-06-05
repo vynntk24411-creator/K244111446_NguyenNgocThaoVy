@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Create a Website</title>
+        <link rel="stylesheet" href="mainstyle.css">
+        <script>
+            function tinhTien() {
+                var qty1 = Number(document.getElementById("qty1").value);
+                var qty2 = Number(document.getElementById("qty2").value);
+                var qty3 = Number(document.getElementById("qty3").value);
+
+                var price1 = 19.95;
+                var price2 = 29.95;
+                var price3 = 39.95;
+
+                document.getElementById("total1").value = (qty1 * price1).toFixed(2);
+                document.getElementById("total2").value = (qty2 * price2).toFixed(2);
+                document.getElementById("total3").value = (qty3 * price3).toFixed(2);
+            }
+
+            function tongCong() {
+                var t1 = Number(document.getElementById("total1").value);
+                var t2 = Number(document.getElementById("total2").value);
+                var t3 = Number(document.getElementById("total3").value);
+
+                var tong = t1 + t2 + t3;
+
+                document.getElementById("tong").value = tong.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Create a Website</legend>
+            <table>
+                <tr>
+                    <th>Part Number</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Item table</th>
+                </tr>
+                <tr>
+                    <td>C112</td>
+                    <td>Mouse</td>
+                    <td>19.95$</td>
+                    <td>
+                        <input type="text" id="qty1" onchange="tinhTien()">
+                    </td>
+                    <td>
+                        <input type="text" id="total1" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>B124</td>
+                    <td>Keyboard US</td>
+                    <td>29.95$</td>
+                    <td>
+                        <input type="text" id="qty2" onchange="tinhTien()">
+                    </td>
+                    <td>
+                        <input type="text" id="total2" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>U125</td>
+                    <td>USB KingMax</td>
+                    <td>39.95$</td>
+                    <td>
+                        <input type="text" id="qty3" onchange="tinhTien()">
+                    </td>
+                    <td>
+                        <input type="text" id="total3" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="footer">
+                        <span>Total:</span>
+                        <input type="text" id="tong" readonly>
+                        <input
+                            type="button"
+                            value="Sum"
+                            class="btnSum"
+                            onclick="tongCong()">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
