@@ -1,0 +1,106 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Member Registration</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/dataset.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body onload="init()">
+        <h1>Member Registration</h1>
+        <hr>
+        <form id="frmMember">
+            <table class="form-table">
+                <tr>
+                    <td>Name(*)</td>
+                    <td>
+                        <input type="text" id="txtName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthday(*)</td>
+                    <td>
+                        Day:
+                        <select id="day"></select>
+                        Month:
+                        <select id="month"></select>
+                        Year:
+                        <select id="year"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender(*)</td>
+                    <td>
+                        <input type="radio" name="gender" value="Man" checked>Man
+                        <input type="radio" name="gender" value="Woman">Woman
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email(*)</td>
+                    <td>
+                        <input type="text" id="txtEmail">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">Your favorite:</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="Shopping" checked>
+                        Shopping
+                        <br>
+                        <input type="checkbox" name="hobby" value="Tourism" checked>
+                        Tourism
+                        <br>
+                        <input type="checkbox" name="hobby" value="Chat" checked>
+                        Chat
+                        <br>
+                        <input type="checkbox" name="hobby" value="Read a book" checked>
+                        Read a book
+                        <br>
+                        <input type="checkbox" name="hobby" value="Listening to music" checked>
+                        Listening to music
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">Your favorite color:</td>
+                    <td>
+                        <input type="radio" name="color" value="Blue" checked>
+                        <span class="blue">Blue</span>
+                        <br>
+                        <input type="radio" name="color" value="Red">
+                        <span class="red">Red</span>
+                        <br>
+                        <input type="radio" name="color" value="Yellow">
+                        <span class="yellow">Yellow</span>
+                        <br>
+                        <input type="radio" name="color" value="Green">
+                        <span class="green">Green</span>
+                        <br>
+                        <input type="radio" name="color" value="Violet">
+                        <span class="violet">Violet</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="registerMember()">Sign up</button>
+                        <button type="button" onclick="nextMember()">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <table id="memberTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Birthday</th>
+                    <th>Hobbies</th>
+                    <th>Colors</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </body>
+</html>

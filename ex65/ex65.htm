@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic List</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="control">
+                <table>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="addNode()">Add Node</button>
+                        </td>
+                        <td>
+                            Content
+                            <input type="text" id="txtContent">
+                        </td>
+                        <td>
+                            Position
+                            <input type="number" id="txtAddPos" min="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="removeNode()">Remove Node</button>
+                        </td>
+                        <td></td>
+                        <td>
+                            Position
+                            <input type="number" id="txtRemovePos" min="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="modifyNode()">Modify Node</button>
+                        </td>
+                        <td>
+                            New Content
+                            <input type="text" id="txtNewContent">
+                        </td>
+                        <td>
+                            Position
+                            <input type="number" id="txtModifyPos" min="1">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h3>Web Node</h3>
+            <ul id="webNode">
+                <li>Data base</li>
+                <li>Web1</li>
+                <li>Web2</li>
+            </ul>
+        </div>
+    </body>
+</html>
