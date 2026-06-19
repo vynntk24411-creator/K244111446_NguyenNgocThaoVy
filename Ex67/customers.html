@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+    <link rel="stylesheet" href="css/maincss.css">
+</head>
+<body onload="load_students()">
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th colspan="4" style="background-color: #f5d72e; color:black; text-align:center">List of Students</th>
+            </tr>
+            <tr>
+                <th data-field="id" onclick="sort_table('id')">Student ID</th>
+                <th data-field="name" onclick="sort_table('name')">Student Name</th>
+                <th data-field="birthday" onclick="sort_table('birthday')">Birthday</th>
+                <th data-field="gender" onclick="sort_table('gender')">Gender</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyStudents">
+        </tbody>
+    </table>
+    <br>
+    <table id="detailTable">
+        <thead>
+            <tr>
+                <th colspan="2" class="detail-title" style="text-align:center">Student Information</th>
+            </tr>
+        </thead>
+        <tbody id="detailStudent">
+        </tbody>
+    </table>
+    <script src="js/mainjs.js"></script>
+</body>
+</html>

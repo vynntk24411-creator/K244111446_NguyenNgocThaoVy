@@ -1,0 +1,34 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#studentTable th, #studentTable td, #detailTable th, #detailTable td {
+    border: 1px solid #999;
+    padding: 5px;
+    text-align: left;
+}
+
+#studentTable th, #studentTable td {
+    cursor: pointer;
+}
+
+#studentTable th {
+    background-color: #3e7202;
+    color: white;
+}
+
+#detailTable {
+    display: none;
+}
+
+.detail-title {
+    background-color: #ff85d0;
+    color: black;
+    text-align: center;
+}
+
+#detailStudent td:first-child {
+    font-weight: bold;
+    width: 35%;
+}
